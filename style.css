@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    user-select: none;
+}
+
+:root {
+    --background:#46344E;
+    --textcolor:#9d8d8f;
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--textcolor);
+}
