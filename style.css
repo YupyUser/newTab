@@ -1,23 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 
-    user-select: none;
+	user-select: none;
 }
 
 :root {
-    --background:#46344E;
-    --textcolor:#9d8d8f;
+	--background: #eeeeee;
+	--block-background: #393e46;
+	--block-border: #222831;
+	--textcolor: #222831;
+
+	font-family: "Rubik Mono One", monospace;
+	font-size: 40px;
 }
 
 body {
-    background-color: var(--background);
+	background-color: var(--background);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+	padding: 32px;
 
-    color: var(--textcolor);
+	color: var(--textcolor);
+}
+
+.gsc-control-cse {
+	box-shadow: 3px 3px 14px var(--block-background);
+}
+
+.time {
+	text-align: center;
+	padding: 24px;
+}
+
+.bookmarks {
+	margin: 32px;
+	border: 3px solid var(--block-border);
+	border-radius: 20px;
+	padding: 32px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+
+	box-shadow: 3px 3px 14px var(--block-background);
+}
+
+a {
+	width: 72px;
+	height: 72px;
+	background-color: var(--background);
+	background-size: cover;
+
+	border: 2px solid var(--block-border);
+	border-radius: 40%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+
+	box-shadow: 1px 1px 14px var(--block-background);
+}
+a:hover {
+	transition: 0.2s;
+	transform: rotate(10deg) scale(1.1);
+
+	box-shadow: 5px 5px 14px var(--block-background);
+}
+
+a img {
+	width: 56px;
+	height: 56px;
 }
