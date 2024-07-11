@@ -14,7 +14,7 @@
 	--textcolor: #222831;
 
 	font-family: "Rubik Mono One", monospace;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 body {
@@ -38,15 +38,10 @@ header {
 
 .bookmarks {
 	margin: 32px;
-	border: 3px solid var(--block-border);
-	border-radius: 20px;
-	padding: 32px;
 
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
-	gap: 32px;
-
-	box-shadow: 3px 3px 14px var(--block-background);
 }
 
 a {
@@ -72,7 +67,24 @@ a:hover {
 	box-shadow: 5px 5px 14px var(--block-background);
 }
 
-a img {
+.img {
 	width: 56px;
 	height: 56px;
+}
+.img_big-one {
+	width: 45px;
+	height: 45px;
+}
+
+.bookmarks__chapter {
+	display: flex;
+	flex-direction: column;
+}
+.title {
+	font-size: 25px;
+}
+.links {
+	display: flex;
+	gap: 32px;
+	padding: 32px;
 }
